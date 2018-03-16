@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="inp" value="">
+<button onclick="game()">GO</button>
+<p id="x"></p>
+<h1 id="h1"></h1>
+<script>
+function game(){
+var x=Math.floor(Math.random() * 10);
+document.getElementById("x").innerHTML =x
+var y=document.getElementById("inp").value
+
+if(y==x){
+	document.getElementById("h1").innerHTML ="Good Work";
+}
+else{
+	document.getElementById("h1").innerHTML ="Not matched";
+}
+}
+</script>
+
+</body>
+</html>
